@@ -48,13 +48,16 @@ img{
     justify-content: space-between;
     background-color: #333;
     color: #fff;
-    opacity: 0.8;
+    opacity: 0.6;
     width: 100%;
     height: 70px;
     position: fixed;
     top: 0px;
     padding: 0 30px;
-    transition: 0.5s;
+    transition: 0.5s ease-in;
+}
+.navbar.top{
+    background: transparent;
 }
 .navbar .logo{
     font-weight: 400;
@@ -144,6 +147,47 @@ img{
 }
 
 
+
+
+
+/* ------ ABOUT PAGE ------ */
+.hero.about{
+    background: url('../images/about/cover.jpg') no-repeat center center/cover;
+    height: 40vh;
+    position: relative;
+    color: #fff;
+}
+
+
+
+
+
+/* ------ Blog PAGE ------ */
+.hero.blog{
+    background: url('../images/home/blog.jpg') no-repeat center center/cover;
+    height: 40vh;
+    position: relative;
+    color: #fff;
+}
+
+.post{
+    padding: 12px 0;
+    margin-top: 20px;
+}
+.post img{
+    width: 300px;
+    border-radius: 25px;
+    display: block;
+    margin: 0 auto 30px;
+}
+.post h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.post p{
+    padding: 10px;
+}
 @media(max-width:768px) {
     .navbar{
         flex-direction: column;

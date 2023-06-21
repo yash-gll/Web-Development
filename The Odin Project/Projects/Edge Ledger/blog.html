@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="stylesheet" href="style/utility.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>EdgeLedger | Blog</title>
+  </head>
+  <body>
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo"><span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Blog </h1>
+        </div>
+    </header>
+
+    <br>
+
+    <main>
+        <article class="flex-columns">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="images/blog/blog1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-2 bg-light">
+                        <h2>Blog Post One</h2>
+                        <p class="meta"><i class="fas fa-user"></i> Posted by <strong>John Doe</strong> | April 19, 2023 </p>
+                        <p>Are you looking for ways to grow your wealth and invest your money in the right places? With so many investment opportunities out there, it can be overwhelming to know where to start. At our financial firm, we're here to help you navigate the complex world of investments and find the best opportunities for you. Whether you're just starting out or you're an experienced investor, our team of experts will work with you to create a personalized investment plan that matches your goals.</p>
+                        <a href="blogs/blog1.html" class="bttn-dark"><i class="fas fa-chevron-right"></i> Read More</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <br>
+
+        <article class="flex-columns-reverse" id="blog">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="images/blog/blog2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-2 bg-dark">
+                        <h2>Blog Post Two</h2>
+                        <p class="meta"><i class="fas fa-user"></i> Posted by <strong>Jane Doe</strong> | April 29, 2023 </p>
+                        <p>Retirement may seem far away, but it's never too early (or too late) to start planning for your future. With so many retirement options available, it can be challenging to figure out the best approach for your needs. Our financial firm specializes in retirement planning and offers comprehensive services to help you prepare for your golden years. From assessing your assets and determining savings goals to creating a tailored retirement plan, our team is here to guide you every step of the way.</p>
+                        <a href="blogs/blog2.html" class="bttn-light"><i class="fas fa-chevron-right"></i> Read More</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <br>
+
+        <article class="flex-columns">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="images/blog/blog3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-2 bg-light">
+                        <h2>Blog Post Three</h2>
+                        <p class="meta"><i class="fas fa-user"></i> Posted by <strong>Micheal Scott</strong> | June 2, 2023 </p>
+                        <p>Do you struggle to stay on top of your finances and live within your means? You're not alone. Managing your money can be difficult, but it's essential for achieving long-term financial health. At our financial firm, we specialize in budgeting and saving strategies that can help you take control of your money. Our experienced advisors will work with you to identify areas where you can cut back expenses, set realistic savings goals, and create a sustainable budget that fits your lifestyle. With a little guidance from us, you'll be on your way to financial stability in no time.</p>
+                        <a href="blogs/blog3.html" class="bttn-dark"><i class="fas fa-chevron-right"></i> Read More</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer class="footer bg-dark">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+            <p>Copyright &copy; 2023</p>
+        </footer>
+    </main>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function() {
+            if(window.pageYOffset > 100){
+                navbar.classList.remove('top');
+                if(!scrolled){
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function(){
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            }
+            else{
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        };
+    </script>
+    
+  </body>
+</html>

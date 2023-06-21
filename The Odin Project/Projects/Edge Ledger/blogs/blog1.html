@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="stylesheet" href="../style/utility.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>EdgeLedger | Blog-1</title>
+  </head>
+  <body>
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo"><span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#cases">Cases</a></li>
+                    <li><a href="../index.html#blog">Blog</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Blog </h1>
+        </div>
+    </header>
+
+    <br>
+
+    <main>
+        <section class="post">
+            <h2>Blog Post One</h2>
+            <hr>
+            <p class="meta"><i class="fas fa-user"></i> Posted by <strong>John Doe</strong> | April 19, 2023 </p>
+            <img src="../images/blog/blog1.jpg" alt="">
+            <p>The first step in identifying investment opportunities is to understand your goals. Are you looking for short-term gains or long-term growth? What is your risk tolerance? These are all important factors to consider when selecting investments. Our team will take the time to learn about your financial objectives and create a customized investment plan that aligns with your preferences.</p>
+            <p>Next, it's important to diversify your portfolio. This means investing in a variety of asset classes and industries to minimize risk and maximize returns. We offer a range of investment options, from stocks and bonds to real estate and alternative investments. By spreading your investments across different sectors, you'll be better protected against market volatility and economic downturns.</p>
+            <p>Timing is also crucial when it comes to investing. We monitor global markets and keep a close eye on economic trends to identify emerging opportunities and potential risks. By staying informed and proactive, we can help you capitalize on favorable market conditions and avoid potential losses.</p>
+            <p>In addition to traditional investments, we also offer alternative investment opportunities. These may include private equity, hedge funds, commodities, and other non-traditional investments. Alternative investments can provide unique benefits, such as access to specialized knowledge and strategies, but they also carry additional risks. We'll work closely with you to determine if alternative investments are right for you based on your individual circumstances.</p>
+            <p>Finally, we believe in transparency and communication throughout the investment process. We'll keep you informed about the performance of your investments and provide timely updates on any changes or developments. Our goal is to work collaboratively with you to achieve your financial objectives and help you grow your wealth over time.</p>
+            <p>Investing your money wisely can help you achieve your financial goals and build a secure future. At our financial firm, we're here to help you navigate the complex world of investments and find the best opportunities for you. Contact us today to learn more about our investment services and how we can help you grow your wealth for the future.</p>
+        </section>
+
+        
+
+        <footer class="footer bg-dark">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+            <p>Copyright &copy; 2023</p>
+        </footer>
+    </main>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function() {
+            if(window.pageYOffset > 100){
+                navbar.classList.remove('top');
+                if(!scrolled){
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function(){
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            }
+            else{
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        };
+    </script>
+    
+  </body>
+</html>
