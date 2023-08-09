@@ -166,14 +166,14 @@
         <section class="flex-columns contacts" id="contact">
             <div class="row">
                 <div class="column">
-                    <div class="column-1">
+                    <div class="scolumn-1">
                         <img src="images/home/contact.jpg" alt="">
                     </div>
                 </div>
                 <div class="column">
                     <div class="column-2 bg-light">
                         <h3>Request Callback</h3>
-                        <form action="" class="callback-form">
+                        <form action="process.php" method="POST" class="callback-form">
                             <div class="form-control">
                                 <label for="name"></label>
                                 <input name="name" id="name" type="text" placeholder="Eg: John Doe">
@@ -228,7 +228,7 @@
             }
         };
 
-        $('#navbar a, .bttn').on('click', function(e){
+        $('#navbar a').on('click', function(e){
             if(this.hash !== ''){
                 e.preventDefault();
                 const hash = this.hash;

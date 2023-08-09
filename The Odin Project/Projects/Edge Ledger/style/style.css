@@ -188,6 +188,23 @@ img{
 .post p{
     padding: 10px;
 }
+
+
+
+
+.navbar-success{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+.py-3{
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.py-1{
+    text-align: center;
+}
 @media(max-width:768px) {
     .navbar{
         flex-direction: column;
